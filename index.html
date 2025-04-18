@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afreed Shaik | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: 'Poppins', sans-serif; background: #f8f9fa; color: #333; }
+    header { background: #004080; color: white; padding: 4rem 2rem; text-align: center; position: relative; }
+    header h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    header p { font-size: 1.2rem; }
+    nav { background: white; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 1000; }
+    nav a { margin: 0 15px; color: #004080; text-decoration: none; font-weight: 600; font-size: 1.1rem; }
+    section { padding: 4rem 2rem; max-width: 1000px; margin: auto; }
+    h2 { color: #004080; font-size: 2rem; margin-bottom: 2rem; text-align: center; }
+    .about, .skills, .projects, .experience, .contact { margin-bottom: 4rem; }
+    .project-card, .experience-card { background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 2rem; transition: transform 0.3s; }
+    .project-card:hover, .experience-card:hover { transform: translateY(-5px); }
+    .skills-bar { background: #ddd; border-radius: 20px; overflow: hidden; margin-bottom: 1rem; }
+    .skills-bar-fill { background: #004080; height: 20px; border-radius: 20px; text-align: right; padding-right: 10px; color: white; font-size: 0.8rem; line-height: 20px; }
+    form input, form textarea { width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px; }
+    form button { background: #004080; color: white; padding: 0.75rem 2rem; border: none; border-radius: 5px; cursor: pointer; }
+    footer { text-align: center; padding: 2rem; background: #004080; color: white; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><span id="typed"></span></h1>
+  <p>Software Design Release Engineer | Embedded Systems Enthusiast | Automotive Specialist</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>I'm Afreed Shaik, passionate about automotive embedded systems, battery management, and control systems. Currently a Software Design Release Engineer at Stellantis with a Master's in Electrical & Computer Engineering.</p>
+  <a href="Afreed_Shaik_Resume.pdf" download style="display:inline-block;margin-top:20px;background:#004080;color:white;padding:10px 20px;border-radius:5px;text-decoration:none;">Download Resume</a>
+</section>
+
+<section id="experience" class="experience" data-aos="fade-up">
+  <h2>Experience</h2>
+  <div class="experience-card">
+    <h3>Stellantis - HV Battery Pack SW Release Engineer</h3>
+    <p>July 2024 - Present | Auburn Hills, MI</p>
+    <ul>
+      <li>Led software requirement definition for BPCM modules.</li>
+      <li>Resolved 50+ hardware/software issues using CANalyzer, INCA, MATLAB.</li>
+    </ul>
+  </div>
+
+  <div class="experience-card">
+    <h3>Lawrence Technological University - Research Assistant</h3>
+    <p>Aug 2023 - July 2024</p>
+    <ul>
+      <li>Designed MPC controllers for autonomous driving using Simulink.</li>
+      <li>Improved vehicle safety and energy efficiency by 20%.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects" class="projects" data-aos="fade-up">
+  <h2>Projects</h2>
+  <div class="project-card">
+    <h3>Cybersecurity in Vehicular Communication</h3>
+    <p>Enhanced vehicular network security with encryption and secure protocols.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>100kW Heterogeneous Battery System</h3>
+    <p>Developed and validated 2nd-life battery packs for electric vehicle applications.</p>
+  </div>
+</section>
+
+<section id="skills" class="skills" data-aos="fade-up">
+  <h2>Skills</h2>
+  <div class="skills-bar">
+    <div class="skills-bar-fill" style="width:90%">MATLAB & Simulink</div>
+  </div>
+  <div class="skills-bar">
+    <div class="skills-bar-fill" style="width:85%">Python & Data Analytics</div>
+  </div>
+  <div class="skills-bar">
+    <div class="skills-bar-fill" style="width:80%">Embedded Systems & CAN Protocols</div>
+  </div>
+</section>
+
+<section id="contact" class="contact" data-aos="fade-up">
+  <h2>Contact Me</h2>
+  <form action="https://formspree.io/f/mzbldaqr" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Afreed Shaik | Built with passion</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+  var typed = new Typed('#typed', {
+    strings: ["Hi, I'm Afreed Shaik.", "Software Engineer.", "Automotive Systems Expert.", "Embedded Systems Enthusiast."],
+    typeSpeed: 60,
+    backSpeed: 30,
+    loop: true
+  });
+</script>
+
+</body>
+</html>
